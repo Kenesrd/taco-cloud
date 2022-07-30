@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            clientId: 569676954889902
+            clientSecret: 8eb40c2520c65c3badc9f1c0e6c6a433
+            scope: email, public_profile
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/home?currentSchema=tacocloud
+    username: postgres
+    password: 1309
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
